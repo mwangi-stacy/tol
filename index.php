@@ -1,10 +1,9 @@
 <?php
-    require 'ClassAutoLoad.php';
+require 'ClassAutoLoad.php';
 
-    // Using the class methods
-    print $layout->header($conf);
-    // print $hello->today();
-    $form->signup();
-    print $layout->footer($conf);
-
-?>
+$ObjLayout->header($conf);
+$ObjLayout->navbar($conf);
+$ObjLayout->banner($conf);
+// $ObjLayout->form_content($conf, $ObjForm);
+$ObjLayout->content($conf);
+$ObjLayout->footer($conf);
